@@ -12,4 +12,6 @@ jobs:
       - name: List Repo Files
         run: ls -ltra
       - name: Execute Shell sript
-        run: ./ascii-script.sh
+        run: |
+          chmod +x ascii-script.sh
+          ./ascii-script.sh
