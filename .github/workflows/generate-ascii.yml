@@ -11,5 +11,5 @@ jobs:
         uses: actions/checkout@v4
       - name: List Repo Files
         run: ls -ltra
-      - name: Execute Cowsay CMD
+      - name: Execute Shell sript
         run: ./ascii-script.sh
