@@ -15,4 +15,4 @@ jobs:
  
  
       - name: Execute shell CMD
-        run: ./github/workflows/ascii-script.sh
+        run: ./ascii-script.sh
