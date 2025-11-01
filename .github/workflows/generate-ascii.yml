@@ -1,21 +1,3 @@
-# name: Generate ASCII Artwork
-
-# on: 
-#   push
-
-# jobs:
-#   ascii_job:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout repo
-#         uses: actions/checkout@v4
-#       - name: List Repo Files
-#         run: ls -ltra
-#       - name: Execute Shell sript
-#         run: |
-#           chmod +x ascii-script.sh
-#           ./ascii-script.sh
-
 name: Generate ASCII Artwork
 
 on: 
@@ -27,12 +9,9 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
-      - name: List Repo Files
-        run: ls -ltra
-
-      - name: Make script executable
-        run: chmod +x ./path/to/ascii-script.sh
-
-      - name: Execute Shell script
-        run: ./path/to/ascii-script.sh
+      - name: Executing shell script
+        uses: ls -ltra
+ 
+ 
+      - name: Execute shell CMD
+        run: ./github/workflows/ascii-script.sh
