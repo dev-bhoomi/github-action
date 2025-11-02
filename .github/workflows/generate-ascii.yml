@@ -9,12 +9,11 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+
       - name: Executing shell script
         run: ls -ltra
 
  
  
       - name: Execute shell CMD
-        run: |
-            chmod +x ascii-script.sh
-            ./scripts/ascii-script.sh
+        run: ./ascii-script.sh
